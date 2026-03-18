@@ -10,7 +10,7 @@ The diagram of XL-LoRA training pipeline is also shown below:
 
 ## Updates
 
-* March 29, 2026: Our oral presentation takes place in LoResLM @ EACL
+* March 29, 2026: Our oral presentation takes place at LoResLM @ EACL
 * March 18, 2026: We released our [sentence embedding](#sentence-embedding-training-simcse) and adapter models [lora-gemma327b-xllora-neg](https://huggingface.co/mbasoz/lora-gemma327b-xllora-neg) and [lora-gemma327b-xllora-pos](https://huggingface.co/mbasoz/lora-gemma327b-xllora-pos).
 * March 17, 2026: We released our [synthesised data](https://huggingface.co/datasets/mbasoz/xllora-datasets).
 * March 2nd 2026: [Our paper](https://arxiv.org/abs/2603.01732) got released!!
