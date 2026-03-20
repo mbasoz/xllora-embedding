@@ -37,8 +37,12 @@ First, install PyTorch following the instructions from the official website:
 To reproduce our setup, we use PyTorch 2.6.0 with CUDA 12.6.
 If you are using Linux with CUDA 12.6, install PyTorch with:
 
-`pip install torch==2.6.0+cu126 torchvision==0.21.0+cu126 torchaudio==2.6.0+cu126 \
-  --index-url https://download.pytorch.org/whl/cu126`
+```bash
+pip install \
+  torch==2.6.0+cu126 torchvision==0.21.0+cu126 torchaudio==2.6.0+cu126 \
+  --index-url https://download.pytorch.org/whl/cu126 \
+  --extra-index-url https://pypi.org/simple
+```
 
 PyTorch versions higher than 2.6.0 with compatible CUDA versions may also work, but are not officially tested.
 
