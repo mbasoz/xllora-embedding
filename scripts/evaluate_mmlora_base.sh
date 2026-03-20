@@ -15,10 +15,15 @@ model_name=jhu-clsp/mmBERT-base
 tokenizer_name=jhu-clsp/mmBERT-base # Tokenizer should match with the model's original tokenizer
 task_name=SemRel24STS # Other alternatives are STS (Korean), MIRACLRetrievalHardNegatives, IndicQARetrieval, BelebeleRetrieval
 
+output_dir_path=../data/mteb_results/
+model_name=jhu-clsp/mmBERT-base
+tokenizer_name=jhu-clsp/mmBERT-base # Tokenizer should match with the model's original tokenizer
+task_name=SemRel24STS # Other alternatives are STS (Korean), MIRACLRetrievalHardNegatives, IndicQARetriev>
+
 python3 ../src/evaluation_mteb.py \
   --model_name ${model_name} \
-  --task_name ${model_name} \
+  --task_name ${task_name} \
   --language hau \
-  --tokenizer_name ${model_name} \
-  --pooler_type avg_first_last \
-  --output_dir ${model_name}
+  --tokenizer_name ${tokenizer_name} \
+  --pooler_type avg \
+  --output_dir ${output_dir_path}

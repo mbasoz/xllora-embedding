@@ -16,8 +16,8 @@ task_name=SemRel24STS # Other alternatives are STS (Korean), MIRACLRetrievalHard
 
 python3 ../src/evaluation_mteb.py \
   --model_name ${model_name} \
-  --task_name ${model_name} \
+  --task_name ${task_name} \
   --language hau \
-  --tokenizer_name ${model_name} \
+  --tokenizer_name ${tokenizer_name} \
   --pooler_type avg_first_last \
-  --output_dir ${model_name}
+  --output_dir ${output_dir_path}
